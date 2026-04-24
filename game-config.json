@@ -1,0 +1,77 @@
+{
+  "version": 1,
+  "updatedAt": "2026-04-24T00:00:00+09:00",
+  "boxes": [
+    {
+      "id": "iron_supply",
+      "name": "사냥 보급 상자",
+      "description": "기본 성장 재화와 파편 위주",
+      "keyType": "key_iron",
+      "freeCooldownHours": 24,
+      "lootTable": [
+        { "label": "혈정 500", "weight": 35, "weightPercent": 35, "reward": { "blood_crystal": 500 } },
+        { "label": "혈정 1000", "weight": 20, "weightPercent": 20, "reward": { "blood_crystal": 1000 } },
+        { "label": "흑철 열쇠 1", "weight": 15, "weightPercent": 15, "reward": { "key_iron": 1 } },
+        { "label": "거미 여왕의 눈", "weight": 10, "weightPercent": 10, "organCode": "spider_eye" },
+        { "label": "회복제 2", "weight": 20, "weightPercent": 20, "reward": { "blood_crystal": 200, "gem": 10 } }
+      ]
+    },
+    {
+      "id": "blue_analysis",
+      "name": "이식 분석 상자",
+      "description": "SR 장기와 흑수 결정 중심",
+      "keyType": "key_blue",
+      "freeCooldownHours": 24,
+      "lootTable": [
+        { "label": "흑수 결정 50", "weight": 35, "weightPercent": 35, "reward": { "dark_crystal": 50 } },
+        { "label": "보석 100", "weight": 25, "weightPercent": 25, "reward": { "gem": 100 } },
+        { "label": "늑대 군주의 심장", "weight": 12, "weightPercent": 12, "organCode": "wolf_heart" },
+        { "label": "철갑 기사의 팔", "weight": 10, "weightPercent": 10, "organCode": "iron_arms" },
+        { "label": "청휘 열쇠 1", "weight": 18, "weightPercent": 18, "reward": { "key_blue": 1 } }
+      ]
+    },
+    {
+      "id": "gold_abyss",
+      "name": "심연 봉인 상자",
+      "description": "SSR 및 희귀 코어 중심",
+      "keyType": "key_gold",
+      "freeCooldownHours": 24,
+      "lootTable": [
+        { "label": "보석 300", "weight": 30, "weightPercent": 30, "reward": { "gem": 300 } },
+        { "label": "망령 주교의 폐", "weight": 18, "weightPercent": 18, "organCode": "ghost_lungs" },
+        { "label": "흑수 결정 120", "weight": 25, "weightPercent": 25, "reward": { "dark_crystal": 120 } },
+        { "label": "금인 열쇠 1", "weight": 12, "weightPercent": 12, "reward": { "key_gold": 1 } },
+        { "label": "프리즘 셀 30", "weight": 15, "weightPercent": 15, "reward": { "prism_cell": 30 } }
+      ]
+    }
+  ],
+  "packages": [
+    {
+      "id": "starter_pack",
+      "name": "초동 해부 스타터 팩",
+      "priceLabel": "₩3,900",
+      "storeProductIdAndroid": "starter_pack_a",
+      "storeProductIdIOS": "starter_pack_i",
+      "description": "초반 성장용 기본 패키지",
+      "reward": { "key_iron": 5, "blood_crystal": 3000, "gem": 150 }
+    },
+    {
+      "id": "analysis_pack",
+      "name": "청휘 분석 지원 팩",
+      "priceLabel": "₩9,900",
+      "storeProductIdAndroid": "analysis_pack_a",
+      "storeProductIdIOS": "analysis_pack_i",
+      "description": "중반 성장용 패키지",
+      "reward": { "key_blue": 6, "dark_crystal": 150, "gem": 400 }
+    }
+  ],
+  "events": [
+    {
+      "id": "launch_event",
+      "name": "출시 기념 해부 실험",
+      "state": "진행중",
+      "description": "기간 중 접속 시 보너스 지급",
+      "entryReward": { "gem": 50, "key_iron": 1 }
+    }
+  ]
+}
