@@ -1,11 +1,11 @@
 {
-  "version": 1,
+  "version": 2,
   "updatedAt": "2026-04-24T00:00:00+09:00",
   "boxes": [
     {
       "id": "iron_supply",
-      "name": "사냥 보급 상자",
-      "description": "기본 성장 재화와 파편 위주",
+      "name": "룬 각인 상자",
+      "description": "기본 성장 재화와 룬 조각 위주",
       "keyType": "key_iron",
       "freeCooldownHours": 24,
       "lootTable": [
@@ -34,13 +34,13 @@
           }
         },
         {
-          "label": "거미 여왕의 눈",
+          "label": "거미 여왕의 시야룬",
           "weight": 10,
           "weightPercent": 10,
           "organCode": "spider_eye"
         },
         {
-          "label": "회복제 2",
+          "label": "회복 보급 2",
           "weight": 20,
           "weightPercent": 20,
           "reward": {
@@ -52,8 +52,8 @@
     },
     {
       "id": "blue_analysis",
-      "name": "이식 분석 상자",
-      "description": "SR 장기와 흑수 결정 중심",
+      "name": "공명 분석 상자",
+      "description": "SR 룬코어와 흑수 결정 중심",
       "keyType": "key_blue",
       "freeCooldownHours": 24,
       "lootTable": [
@@ -74,13 +74,13 @@
           }
         },
         {
-          "label": "늑대 군주의 심장",
+          "label": "늑대 군주의 심장룬",
           "weight": 12,
           "weightPercent": 12,
           "organCode": "wolf_heart"
         },
         {
-          "label": "철갑 기사의 팔",
+          "label": "철갑 기사의 전투룬",
           "weight": 10,
           "weightPercent": 10,
           "organCode": "iron_arms"
@@ -98,7 +98,7 @@
     {
       "id": "gold_abyss",
       "name": "심연 봉인 상자",
-      "description": "SSR 및 희귀 코어 중심",
+      "description": "SSR 룬코어와 희귀 재화 중심",
       "keyType": "key_gold",
       "freeCooldownHours": 24,
       "lootTable": [
@@ -111,7 +111,7 @@
           }
         },
         {
-          "label": "망령 주교의 폐",
+          "label": "망령 주교의 안개룬",
           "weight": 18,
           "weightPercent": 18,
           "organCode": "ghost_lungs"
@@ -141,12 +141,61 @@
           }
         }
       ]
+    },
+    {
+      "id": "pet_egg_box",
+      "name": "펫 알 상자",
+      "description": "펫 알을 획득할 수 있는 전용 상자",
+      "keyType": "key_pet",
+      "freeCooldownHours": 24,
+      "lootTable": [
+        {
+          "label": "작은 펫 알",
+          "weight": 45,
+          "weightPercent": 45,
+          "petEgg": {
+            "eggKey": "egg_common",
+            "rarity": "R",
+            "hatchSeconds": 1800
+          }
+        },
+        {
+          "label": "푸른 펫 알",
+          "weight": 30,
+          "weightPercent": 30,
+          "petEgg": {
+            "eggKey": "egg_rare",
+            "rarity": "SR",
+            "hatchSeconds": 7200
+          }
+        },
+        {
+          "label": "황금 펫 알",
+          "weight": 18,
+          "weightPercent": 18,
+          "petEgg": {
+            "eggKey": "egg_epic",
+            "rarity": "SSR",
+            "hatchSeconds": 21600
+          }
+        },
+        {
+          "label": "심연 펫 알",
+          "weight": 7,
+          "weightPercent": 7,
+          "petEgg": {
+            "eggKey": "egg_legend",
+            "rarity": "UR",
+            "hatchSeconds": 43200
+          }
+        }
+      ]
     }
   ],
   "packages": [
     {
       "id": "starter_pack",
-      "name": "초동 해부 스타터 팩",
+      "name": "초동 룬헌터 스타터 팩",
       "priceLabel": "₩3,900",
       "storeProductIdAndroid": "starter_pack_a",
       "storeProductIdIOS": "starter_pack_i",
@@ -159,7 +208,7 @@
     },
     {
       "id": "analysis_pack",
-      "name": "청휘 분석 지원 팩",
+      "name": "청휘 공명 지원 팩",
       "priceLabel": "₩9,900",
       "storeProductIdAndroid": "analysis_pack_a",
       "storeProductIdIOS": "analysis_pack_i",
@@ -168,6 +217,19 @@
         "key_blue": 6,
         "dark_crystal": 150,
         "gem": 400
+      }
+    },
+    {
+      "id": "pet_starter_pack",
+      "name": "펫 알 스타터 팩",
+      "priceLabel": "₩7,900",
+      "storeProductIdAndroid": "pet_starter_pack_a",
+      "storeProductIdIOS": "pet_starter_pack_i",
+      "description": "펫 알 상자를 열 수 있는 전용 패키지",
+      "reward": {
+        "key_pet": 3,
+        "gem": 300,
+        "blood_crystal": 2000
       }
     }
   ],
@@ -180,6 +242,16 @@
       "entryReward": {
         "gem": 50,
         "key_iron": 1
+      }
+    },
+    {
+      "id": "pet_launch_event",
+      "name": "펫 시스템 오픈 이벤트",
+      "state": "진행중",
+      "description": "펫 알 상자 업데이트 기념 보상",
+      "entryReward": {
+        "key_pet": 1,
+        "gem": 100
       }
     }
   ]
